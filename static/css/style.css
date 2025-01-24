@@ -1,0 +1,163 @@
+:root {
+    --yale-blue: #00356B;
+    --yale-white: #ffffff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.navbar {
+    background-color: var(--yale-blue);
+    padding: 1rem 0;
+}
+
+.yale-header {
+    width: 100%;
+}
+
+.yale-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.yale-logo {
+    height: 60px;
+    width: auto;
+}
+
+.yale-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.yale-school {
+    color: var(--yale-white);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.yale-center {
+    color: var(--yale-white);
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.main-title {
+    color: var(--yale-blue);
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 3rem 0;
+    text-align: left;
+    max-width: 800px;
+    line-height: 1.2;
+}
+
+.section-subtitle {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+}
+
+.section-divider {
+    border-top: 2px solid #000;
+    margin: 1rem 0;
+}
+
+.collapsible-section {
+    margin-bottom: 1rem;
+}
+
+.collapsible-header {
+    background-color: transparent;
+    color: #000;
+    padding: 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.collapsible-header::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.collapsible-header:hover {
+    background-color: #f8f9fa;
+}
+
+.collapsible-content {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0 0 4px 4px;
+    display: none;
+}
+
+.download-button {
+    background-color: var(--yale-blue);
+    color: var(--yale-white);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #004c99;
+}
+
+.index-selector {
+    margin: 2rem 0;
+    max-width: 600px;
+}
+
+.form-select {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.plot-title {
+    color: var(--yale-blue);
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.plot-container {
+    margin: 1rem 0;
+    min-height: 600px;
+}
+
+.calculation-section {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .plot-container {
+        min-height: 300px;
+    }
+}
